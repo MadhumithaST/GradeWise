@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GradeWise Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <h2>📘 GradeWise</h2>
+
+    
+    <p>CGPA Calculator</p>
+    <p>Semester Tracking</p>
+    <p>Performance Analysis</p>
+    <p>Grade Prediction</p>
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <div class="dashboard-grid">
+
+      <!-- LEFT SECTION -->
+      <div class="left-panel">
+
+        <h2>Overall CGPA</h2>
+
+        <div class="cgpa-box">
+          <span id="overallCGPA">0.00</span>
+        </div>
+
+        <h3>📊 Semester Wise Performance</h3>
+
+        <table class="summary-table">
+          <thead>
+            <tr>
+              <th>Semester</th>
+              <th>CGPA</th>
+            </tr>
+          </thead>
+          <tbody id="semesterSummary"></tbody>
+        </table>
+
+      </div>
+
+      <!-- RIGHT SECTION (SEM BUTTONS ALWAYS VISIBLE) -->
+      <div class="right-panel">
+
+        <h3>📚 Semesters</h3>
+        <h4>Choose Semester to Add Subjects</h4>
+
+        <div class="sem-buttons">
+          <a href="semester.html?sem=1">Semester 1</a>
+          <a href="semester.html?sem=2">Semester 2</a>
+          <a href="semester.html?sem=3">Semester 3</a>
+          <a href="semester.html?sem=4">Semester 4</a>
+          <a href="semester.html?sem=5">Semester 5</a>
+          <a href="semester.html?sem=6">Semester 6</a>
+          <a href="semester.html?sem=7">Semester 7</a>
+          <a href="semester.html?sem=8">Semester 8</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

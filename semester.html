@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Semester</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h2 id="title">Semester</h2>
+
+  <input id="subject" placeholder="Subject Name">
+  <input id="credits" type="number" placeholder="Credits">
+  <input id="grade" type="number" placeholder="Grade (0-10)">
+
+  <button onclick="addSubject()">Add Subject</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Subject</th>
+        <th>Credits</th>
+        <th>Grade</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="table"></tbody>
+  </table>
+
+  <h3>CGPA: <span id="cgpa">0.00</span></h3>
+  <button>BACK</button>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

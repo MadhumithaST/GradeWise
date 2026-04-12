@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f6f7fb;
+  color: #2d3748;
+}
+
+/* ---------------- LAYOUT ---------------- */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ---------------- SIDEBAR ---------------- */
+.sidebar {
+  width: 260px;
+  background: #ffffff;
+  padding: 25px;
+  border-right: 1px solid #e5e7eb;
+}
+
+.sidebar h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #7c3aed;
+}
+
+.features-title {
+  margin-top: 25px;
+  font-size: 12px;
+  color: #94a3b8;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.sidebar p {
+  margin: 10px 0;
+  color: #475569;
+  font-size: 14px;
+}
+
+/* ---------------- MAIN ---------------- */
+.main {
+  flex: 1;
+  padding: 40px;
+}
+
+.main h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.main h3 {
+  margin-top: 30px;
+  color: #64748b;
+}
+
+/* ---------------- CGPA BOX ---------------- */
+.cgpa-box {
+  font-size: 52px;
+  font-weight: bold;
+  color: #7c3aed;
+  margin: 15px 0;
+}
+
+/* ---------------- SEM GRID ---------------- */
+.sem-grid {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.sem-grid a {
+  background: #ffffff;
+  padding: 16px;
+  text-align: center;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #334155;
+  border: 1px solid #e5e7eb;
+  transition: 0.2s;
+}
+
+.sem-grid a:hover {
+  background: #f1f5f9;
+  border: 1px solid #7c3aed;
+  transform: translateY(-3px);
+}
+
+/* ---------------- CONTAINER ---------------- */
+.container {
+  padding: 40px;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+  color: #7c3aed;
+}
+
+/* ---------------- INPUT ---------------- */
+input {
+  padding: 12px;
+  margin: 6px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+}
+
+input:focus {
+  border-color: #7c3aed;
+  outline: none;
+}
+
+/* ---------------- BUTTON ---------------- */
+button {
+  padding: 10px 16px;
+  margin: 6px;
+  background: #7c3aed;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #6d28d9;
+}
+
+/* ---------------- TABLE ---------------- */
+table {
+  margin-top: 25px;
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+th, td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+  color: #64748b;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.summary-table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.summary-table th,
+.summary-table td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.summary-table th {
+  background: #f8fafc;
+  color: #64748b;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.summary-table td {
+  color: #334155;
+}
+
+.dashboard-grid {
+  display: flex;
+  gap: 30px;
+}
+
+/* LEFT PANEL */
+.left-panel {
+  flex: 2;
+}
+
+/* RIGHT PANEL */
+.right-panel {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 20px;
+  border-radius: 12px;
+  height: fit-content;
+}
+
+/* SEMESTER BUTTONS */
+.sem-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.sem-buttons a {
+  text-decoration: none;
+  padding: 12px;
+  text-align: center;
+  border-radius: 10px;
+  background: #f1f5f9;
+  color: #334155;
+  border: 1px solid #e5e7eb;
+  transition: 0.2s;
+}
+
+.sem-buttons a:hover {
+  background: #e2e8f0;
+  border: 1px solid #7c3aed;
+  transform: translateX(4px);
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .sem-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
